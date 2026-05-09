@@ -5,13 +5,13 @@ class VaultAi < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/sathvik0548/vault-ai/releases/download/v0.1.0-alpha/vault-ai-macos-arm64"
-    sha256 :no_check
+    sha256 "47b0485dc04cb28e63b65be172958728293e0f326b023529258ec47449600094"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/sathvik0548/vault-ai/releases/download/v0.1.0-alpha/vault-ai-macos-intel"
-    sha256 :no_check
+    sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   elsif OS.linux?
     url "https://github.com/sathvik0548/vault-ai/releases/download/v0.1.0-alpha/vault-ai-linux-x64"
-    sha256 :no_check
+    sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   end
 
   def install
